@@ -11,7 +11,11 @@ vnoremap <C-S> "ay/<C-R>=escape(@a,"\\/\'")<CR><CR>
 " cont. search
 nnoremap <C-S> n
 inoremap <C-S> <C-O>n
+inoremap <F2> <C-O>:w<CR>
+noremap <F2> :w<CR>
 
+inoremap <F4> <C-O>:only<CR>
+noremap <F4> :only<CR>
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
