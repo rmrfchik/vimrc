@@ -1,2 +1,6 @@
-clone to home directory, run "sh link.sh"
+vim-plug is required, install with:
 
+ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+clone to home directory, run "sh link.sh"
