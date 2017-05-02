@@ -2,6 +2,7 @@ set nocp ai si noet showmatch ic incsearch
 set guioptions-=T
 set mouse=a
 set number
+set gfn=Noto\ Mono\ 16
 
 colorscheme darkblue
 
@@ -13,6 +14,9 @@ nnoremap <C-S> n
 inoremap <C-S> <C-O>n
 inoremap <F2> <C-O>:w<CR>
 noremap <F2> :w<CR>
+
+inoremap <F3> <C-O>:NERDTreeToggle<CR>
+noremap <F3> :NERDTreeToggle<CR>
 
 inoremap <F4> <C-O>:only<CR>
 noremap <F4> :only<CR>
