@@ -2,10 +2,7 @@ set nocp ai si noet showmatch ic incsearch
 set guioptions-=T
 set mouse=a
 set number
-set gfn=Noto\ Mono\ 16
-
-colorscheme darkblue
-
+set gfn=Noto\ Mono\ 12
 
 " starts search with current highlights in visual mode
 vnoremap <C-S> "ay/<C-R>=escape(@a,"\\/\'")<CR><CR>
@@ -28,9 +25,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'Bling/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
+Plug 'dracula/vim'
 call plug#end()
 
 let g:airline_section_gutter="ascii:%b[%B]"
 filetype plugin indent on
 set laststatus=2
 
+colorscheme dracula
